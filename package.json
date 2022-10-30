@@ -10,9 +10,10 @@
     }
   },
   "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
     "lint": "eslint src/**/*{.ts,.d.ts}",
-    "lint:fix": "eslint src/**/*{.ts,.d.ts} --fix",
-    "build": "vite build"
+    "lint:fix": "eslint src/**/*{.ts,.d.ts} --fix"
   },
   "author": "",
   "license": "ISC",

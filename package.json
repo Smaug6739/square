@@ -15,8 +15,8 @@
     "lint": "eslint src/**/*{.ts,.d.ts}",
     "lint:fix": "eslint src/**/*{.ts,.d.ts} --fix"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Smaug#6739",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.7",
     "@typescript-eslint/eslint-plugin": "^5.41.0",

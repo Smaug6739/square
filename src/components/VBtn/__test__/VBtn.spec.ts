@@ -1,11 +1,10 @@
+import { describe, expect, test } from 'vitest';
+import { mount } from '@vue/test-utils';
 import VBtn from '../VBtn.vue';
-console.log(VBtn);
 
-/*
-describe('VBtn.vue', () => {
-  it('renders a button', () => {
+describe('VBtn snapshot', () => {
+  test('default', () => {
     const wrapper = mount(VBtn);
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
-*/

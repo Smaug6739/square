@@ -1,12 +1,13 @@
+<script lang="ts" setup src="./VBtn.ts"></script>
+
 <template>
-	<p>
-		Test 2
-	</p>
+	<button>
+		<i v-if="icon" :class="icon"></i>
+		<slot>{{ value }}</slot>
+	</button>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-export default defineComponent({
-	name: 'VBtn',
-});
-</script>
+
+<style src="./VBtn.scss" lang=scss scoped>
+// Path: src/components/VBtn/VBtn.scss
+</style>

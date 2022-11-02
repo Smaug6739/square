@@ -12,6 +12,7 @@
   "scripts": {
     "build": "vite build",
     "build:watch": "vite build --watch",
+    "build:typings": "tsc --build tsconfig.types.json",
     "lint": "eslint src/**/*{.ts,.d.ts}",
     "lint:fix": "eslint src/**/*{.ts,.d.ts} --fix",
     "test": "vitest run",

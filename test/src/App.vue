@@ -3,6 +3,9 @@ import { VBtn } from "../../"
 </script>
 
 <template>
-  <VBtn value="z"></VBtn>
+  <main>
+    <VBtn label="Test label"></VBtn>
+    <VBtn label="Test label">Hello world !</VBtn>
+  </main>
 </template>
 

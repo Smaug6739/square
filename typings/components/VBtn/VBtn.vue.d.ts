@@ -4,7 +4,7 @@ declare const _default: {
         $data: {};
         $props: Partial<{}> & Omit<Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
             onClick?: () => void;
-            value?: string;
+            label?: string;
             enabled?: boolean;
             loading?: boolean | string;
             icon?: string;
@@ -24,7 +24,7 @@ declare const _default: {
         $el: any;
         $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
             onClick?: () => void;
-            value?: string;
+            label?: string;
             enabled?: boolean;
             loading?: boolean | string;
             icon?: string;
@@ -50,7 +50,7 @@ declare const _default: {
         $watch(source: string | Function, cb: Function, options?: import("vue").WatchOptions<boolean>): import("vue").WatchStopHandle;
     } & Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
         onClick?: () => void;
-        value?: string;
+        label?: string;
         enabled?: boolean;
         loading?: boolean | string;
         icon?: string;
@@ -60,7 +60,7 @@ declare const _default: {
     __isSuspense?: never;
 } & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
     onClick?: () => void;
-    value?: string;
+    label?: string;
     enabled?: boolean;
     loading?: boolean | string;
     icon?: string;

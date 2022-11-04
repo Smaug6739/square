@@ -1,13 +1,18 @@
-<script lang="ts" setup src="./VBtn.ts"></script>
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+defineProps<{
+	onClick?: () => void;
+	value?: string;
+	enabled?: boolean;
+	loading?: boolean | string;
+	icon?: string;
+}>();
+
+</script>
 
 <template>
-	<button>
-		<i v-if="icon" :class="icon"></i>
-		<slot>{{ value }}</slot>
+	<button @click="onClick">
+		<slot />
 	</button>
 </template>
-
-
-<style src="./VBtn.scss" lang=scss scoped>
-// Path: src/components/VBtn/VBtn.scss
-</style>

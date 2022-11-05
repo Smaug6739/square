@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<{
 	onClick?: () => void;
 	label?: string;
 	enabled?: boolean;
-	loading?: boolean | string;
+	loading?: boolean | string; //TODO: Implement loading
 
 	// Style
 	primary?: boolean;

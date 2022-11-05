@@ -7,7 +7,11 @@ declare const _default: {
             label?: string;
             enabled?: boolean;
             loading?: boolean | string;
-            icon?: string;
+            primary?: boolean;
+            secondary?: boolean;
+            danger?: boolean;
+            success?: boolean;
+            warning?: boolean;
         }>>> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, never>;
         $attrs: {
             [x: string]: unknown;
@@ -27,7 +31,11 @@ declare const _default: {
             label?: string;
             enabled?: boolean;
             loading?: boolean | string;
-            icon?: string;
+            primary?: boolean;
+            secondary?: boolean;
+            danger?: boolean;
+            success?: boolean;
+            warning?: boolean;
         }>>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {}> & {
             beforeCreate?: (() => void) | (() => void)[];
             created?: (() => void) | (() => void)[];
@@ -53,7 +61,11 @@ declare const _default: {
         label?: string;
         enabled?: boolean;
         loading?: boolean | string;
-        icon?: string;
+        primary?: boolean;
+        secondary?: boolean;
+        danger?: boolean;
+        success?: boolean;
+        warning?: boolean;
     }>>> & import("vue").ShallowUnwrapRef<{}> & {} & import("vue").ComponentCustomProperties;
     __isFragment?: never;
     __isTeleport?: never;
@@ -63,7 +75,11 @@ declare const _default: {
     label?: string;
     enabled?: boolean;
     loading?: boolean | string;
-    icon?: string;
+    primary?: boolean;
+    secondary?: boolean;
+    danger?: boolean;
+    success?: boolean;
+    warning?: boolean;
 }>>>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & (new () => {
     $slots: {
         default: (_: {}) => any;

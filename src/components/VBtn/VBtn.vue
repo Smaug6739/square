@@ -1,6 +1,6 @@
 
 <template>
-	<button @click="onClick" :class="color + ' ' + tr">
+	<button @click="onClick" :class="{ ...color, ' transparent': isTransparent}" :disabled="!enabled">
 		<slot>
 			{{ label }}
 		</slot>
@@ -10,7 +10,7 @@
 <script lang="ts" setup>
 import { defineProps, computed } from 'vue';
 
-const props = defineProps<{
+const props = withDefaults(defineProps<{
 	onClick?: () => void;
 	label?: string;
 	enabled?: boolean;
@@ -24,24 +24,33 @@ const props = defineProps<{
 	warning?: boolean;
 
 	transparent?: boolean;
-}>();
+}>(), {
+	enabled: true,
+	loading: false,
+
+	primary: false,
+	secondary: false,
+	danger: false,
+	success: false,
+	warning: false,
+	transparent: false,
+});
 
 const onClick = () => {
 	if (props.onClick) props.onClick();
 };
 
 const color = computed(() => {
-	if (props.primary) return 'primary';
-	if (props.secondary) return 'secondary';
-	if (props.danger) return 'danger';
-	if (props.success) return 'success';
-	if (props.warning) return 'warning';
+	if (props.primary) return { 'primary': true };
+	if (props.secondary) return { 'secondary': true };
+	if (props.danger) return { 'danger': true };
+	if (props.success) return { 'success': true };
+	if (props.warning) return { 'warning': true };
 	return '';
 });
 
-const tr = computed(() => {
-	if (props.transparent) return 'transparent';
-	return '';
+const isTransparent = computed(() => {
+	return props.transparent;
 });
 </script>
 

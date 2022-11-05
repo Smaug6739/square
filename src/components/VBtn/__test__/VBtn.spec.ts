@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test, vi } from 'vitest';
 import { mount } from '@vue/test-utils';
 import VBtn from '../VBtn.vue';
 
@@ -116,5 +116,14 @@ describe('VBtn classes', () => {
     const wrapperInfo = mount(VBtn, { props: { transparent: true, info: true } });
     expect(wrapperInfo.classes()).toContain('info');
     expect(wrapperInfo.classes()).toContain('transparent');
+  });
+});
+
+describe('Test onClick function', () => {
+  test('onClick', () => {
+    const onClick = vi.fn();
+    const wrapper = mount(VBtn, { props: { onClick } });
+    wrapper.trigger('click');
+    expect(onClick).toHaveBeenCalled();
   });
 });

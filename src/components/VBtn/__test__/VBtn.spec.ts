@@ -127,3 +127,10 @@ describe('Test onClick function', () => {
     expect(onClick).toHaveBeenCalled();
   });
 });
+
+describe('Test labels', () => {
+  test('Label', () => {
+    const wrapper = mount(VBtn, { props: { label: 'test' } });
+    expect(wrapper.text()).toBe('test');
+  });
+});

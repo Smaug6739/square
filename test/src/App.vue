@@ -14,6 +14,7 @@ function handleClick() {
       <VBtn :onClick="() => handleClick()" danger>Danger</VBtn>
       <VBtn :onClick="() => handleClick()" success>Success</VBtn>
       <VBtn :onClick="() => handleClick()" warning>Warning</VBtn>
+      <VBtn :onClick="() => handleClick()" info>Info</VBtn>
     </div>
     <div>
       <h2>Buttons: Transparent</h2>
@@ -22,6 +23,7 @@ function handleClick() {
       <VBtn transparent danger>Danger</VBtn>
       <VBtn transparent success>Success</VBtn>
       <VBtn transparent warning>Warning</VBtn>
+      <VBtn transparent info>Info</VBtn>
     </div>
     <div>
       <h2>Buttons: Disabled</h2>
@@ -30,6 +32,7 @@ function handleClick() {
       <VBtn disabled danger>Danger</VBtn>
       <VBtn disabled success>Success</VBtn>
       <VBtn disabled warning>Warning</VBtn>
+      <VBtn disabled info>Info</VBtn>
     </div>
   </main>
 </template>

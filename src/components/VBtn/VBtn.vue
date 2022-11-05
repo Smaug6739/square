@@ -22,6 +22,7 @@ const props = withDefaults(defineProps<{
 	danger?: boolean;
 	success?: boolean;
 	warning?: boolean;
+	info?: boolean;
 
 	transparent?: boolean;
 }>(), {
@@ -33,6 +34,8 @@ const props = withDefaults(defineProps<{
 	danger: false,
 	success: false,
 	warning: false,
+	info: false,
+
 	transparent: false,
 });
 
@@ -46,6 +49,7 @@ const color = computed(() => {
 	if (props.danger) return { 'danger': true };
 	if (props.success) return { 'success': true };
 	if (props.warning) return { 'warning': true };
+	if (props.info) return { 'info': true };
 	return '';
 });
 

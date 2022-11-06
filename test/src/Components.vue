@@ -28,12 +28,12 @@ function handleClick() {
 		</div>
 		<div>
 			<h2>Buttons: Disabled</h2>
-			<VBtn disabled primary>Primary</VBtn>
-			<VBtn disabled secondary>Secondary</VBtn>
-			<VBtn disabled danger>Danger</VBtn>
-			<VBtn disabled success>Success</VBtn>
-			<VBtn disabled warning>Warning</VBtn>
-			<VBtn disabled info>Info</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled primary>Primary</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled secondary>Secondary</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled danger>Danger</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled success>Success</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled warning>Warning</VBtn>
+			<VBtn :onClick="() => handleClick()" disabled info>Info</VBtn>
 		</div>
 	</main>
 </template>

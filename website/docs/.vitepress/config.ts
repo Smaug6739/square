@@ -14,5 +14,17 @@ export default defineConfig({
       { text: 'Documentation', link: '/docs/' },
       { text: 'GitHub', link: '' },
     ],
+    socialLinks: [
+      { icon: 'discord', link: 'https://discord.com/users/611468402263064577' },
+      { icon: 'github', link: 'https://github.com/Smaug6739/square' },
+    ],
+    sidebar: {
+      '/docs/': [
+        {
+          text: 'Components',
+          items: [{ text: 'Button', link: '/docs/components/button' }],
+        },
+      ],
+    },
   },
 });

@@ -1,6 +1,6 @@
 
 <template>
-	<button @click="onClick" :class="{ ...color, ' transparent': isTransparent}" :disabled="!enabled">
+	<button @click="onClick" :class="{ ...color, ' transparent': isTransparent }" :disabled="!enabled">
 		<slot>
 			{{ label }}
 		</slot>
@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<{
 	onClick?: () => void;
 	label?: string;
 	enabled?: boolean;
-	loading?: boolean | string; //TODO: Implement loading
+	loading?: boolean; //TODO: Implement loading
 
 	// Style
 	primary?: boolean;
@@ -56,6 +56,7 @@ const color = computed(() => {
 const isTransparent = computed(() => {
 	return props.transparent;
 });
+
 </script>
 
 <style scoped lang="scss" src="./VBtn.scss">

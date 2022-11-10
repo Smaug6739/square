@@ -1,43 +1,49 @@
 <script setup lang="ts">
-// @ts-ignore
-import { HelloWorld } from "../../"
-console.log(HelloWorld);
-
+import Components from './Components.vue'
 </script>
 
 <template>
-
-
   <main>
-    <HelloWorld />
+    <section id="light">
+      <Components />
+
+    </section>
+    <section id="dark">
+      <Components />
+    </section>
   </main>
+
 </template>
 
-<style scoped>
-header {
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
   line-height: 1.5;
+  color: #212121;
+  margin: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+
+section {
+  min-height: 100vh;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+#light {
+  background-color: #f5f5f5;
+  color: #212121;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+#dark {
+  background-color: #212121;
+  color: #f5f5f5;
 }
 </style>
+

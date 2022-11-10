@@ -1,0 +1,9 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "typings",
+    "skipLibCheck": true
+  }
+}

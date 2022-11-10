@@ -1,0 +1,126 @@
+// GENERAL \\
+$blue: #007bff;
+$indigo: #6610f2;
+$purple-t: #6f42c1;
+$pink: #ff0e6a;
+$red: #dc3545;
+$white: white;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$grey: #869099;
+$black: #000000;
+
+// MAIN COLOR \\
+
+// NOTE: '-t' => 'transparent'
+
+
+@mixin light-theme {
+	// COLORS \\
+	--blue-t: rgb(0, 123, 255);
+	--blue-t-bg: rgba(0, 123, 255, 0.2);
+	--blue-t-border: rgba(0, 123, 255, 0.25);
+
+	--blue: #fff;
+	--blue-bg: rgb(0, 123, 255);
+	--blue-border: rgb(0, 123, 255, 0.2);
+
+
+	--green-t: rgb(40, 167, 69);
+	--green-t-bg: rgba(40, 167, 69, 0.2);
+	--green-t-border: rgba(40, 167, 69, 0.25);
+
+	--green: #fff;
+	--green-bg: rgb(40, 167, 69);
+	--green-border: rgb(40, 167, 69, 0.2);
+
+	--red-t: rgb(220, 53, 69);
+	--red-t-bg: rgba(220, 53, 69, 0.2);
+	--red-t-border: rgba(220, 53, 69, 0.25);
+
+	--red: #fff;
+	--red-bg: rgb(220, 53, 69);
+	--red-border: rgb(220, 53, 69, 0.2);
+
+	--yellow-t: rgb(255, 191, 0);
+	--yellow-t-bg: rgba(255, 193, 7, 0.25);
+	--yellow-t-border: rgba(255, 193, 7, 0.25);
+
+	--yellow: #fff;
+	--yellow-bg: rgb(255, 193, 7);
+	--yellow-border: rgb(255, 193, 7, 0.2);
+
+	--purple-t: rgb(84, 104, 255);
+	--purple-t-bg: rgba(84, 104, 255, 0.2);
+	--purple-t-border: rgba(84, 104, 255, 0.25);
+
+	--purple: #fff;
+	--purple-bg: rgb(84, 104, 255);
+	--purple-border: rgb(84, 104, 255, 0.2);
+
+	--grey-t: rgb(134, 144, 153);
+	--grey-t-bg: rgba(134, 144, 153, 0.2);
+	--grey-t-border: rgba(134, 144, 153, .25);
+
+	--grey: #fff;
+	--grey-bg: rgb(163, 161, 161);
+	--grey-border: rgb(163, 161, 161, 0.2);
+
+	--border-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+:root {
+	@include light-theme;
+
+	// STYLES \\
+	--primary: var(--blue);
+	--primary-bg: var(--blue-bg);
+	--primary-border: var(--blue-border);
+
+	--primary-t: var(--blue-t);
+	--primary-t-bg: var(--blue-t-bg);
+	--primary-t-border: var(--blue-t-border);
+
+	--secondary: var(--grey);
+	--secondary-bg: var(--grey-bg);
+	--secondary-border: var(--grey-border);
+
+	--secondary-t: var(--grey-t);
+	--secondary-t-bg: var(--grey-t-bg);
+	--secondary-t-border: var(--grey-t-border);
+
+	--info: var(--purple);
+	--info-bg: var(--purple-bg);
+	--info-border: var(--purple-border);
+
+	--info-t: var(--purple-t);
+	--info-t-bg: var(--purple-t-bg);
+	--info-t-border: var(--purple-t-border);
+
+	--success: var(--green);
+	--success-bg: var(--green-bg);
+	--success-border: var(--green-border);
+
+	--success-t: var(--green-t);
+	--success-t-bg: var(--green-t-bg);
+	--success-t-border: var(--green-t-border);
+
+	--warning: var(--yellow);
+	--warning-bg: var(--yellow-bg);
+	--warning-border: var(--yellow-border);
+
+	--warning-t: var(--yellow-t);
+	--warning-t-bg: var(--yellow-t-bg);
+	--warning-t-border: var(--yellow-t-border);
+
+	--danger: var(--red);
+	--danger-bg: var(--red-bg);
+	--danger-border: var(--red-border);
+
+	--danger-t: var(--red-t);
+	--danger-t-bg: var(--red-t-bg);
+	--danger-t-border: var(--red-t-border);
+}

@@ -9,6 +9,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'Square',
       fileName: format => `square.${format}.js`,
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: ['vue'],

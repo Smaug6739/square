@@ -1,3 +1,27 @@
 // Vitest Snapshot v1
 
-exports[`VBtn snapshot > default 1`] = `"<p> Test 2 </p>"`;
+exports[`VBtn snapshot > Default (without argument) 1`] = `"<button class=\\"\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 1`] = `"<button class=\\"primary\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 2`] = `"<button class=\\"secondary\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 3`] = `"<button class=\\"success\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 4`] = `"<button class=\\"danger\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 5`] = `"<button class=\\"warning\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (primary, secondary, success, danger, warning, info) 6`] = `"<button class=\\"info\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 1`] = `"<button class=\\"primary  transparent\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 2`] = `"<button class=\\"secondary  transparent\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 3`] = `"<button class=\\"success  transparent\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 4`] = `"<button class=\\"danger  transparent\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 5`] = `"<button class=\\"warning  transparent\\" data-v-27514c19=\\"\\"></button>"`;
+
+exports[`VBtn snapshot > Styles (transparent) 6`] = `"<button class=\\"info  transparent\\" data-v-27514c19=\\"\\"></button>"`;
